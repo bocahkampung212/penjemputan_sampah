@@ -9,12 +9,12 @@ class Dashbord extends StatelessWidget {
         backgroundColor: Color.fromRGBO(42, 190, 94, 1),
         body: Stack(children: [
           Container(
-              height: 300,
+              height: 280,
               child: Card(
                   margin: EdgeInsets.only(
                     top: 100,
-                    left: 25,
-                    right: 25,
+                    left: 50,
+                    right: 50,
                     bottom: 0,
                   ),
                   color: Color.fromARGB(255, 150, 235, 202),
