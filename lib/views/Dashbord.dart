@@ -3,14 +3,13 @@ import 'package:flutter/material.dart';
 
 class Dashbord extends StatelessWidget {
   const Dashbord({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Color.fromRGBO(42, 190, 94, 1),
         body: Stack(children: [
           Container(
-              height: 250,
+              height: 300,
               child: Card(
                   margin: EdgeInsets.only(
                     top: 100,
@@ -20,11 +19,9 @@ class Dashbord extends StatelessWidget {
                   ),
                   color: Color.fromARGB(255, 150, 235, 202),
                   child: Column(children: [
-                    SizedBox(
-                      height: 100,
-                      width: 500,
-                    ),
-                    Image.asset('assets/')
+                    Image.asset(
+                      'assets/background.jpg',
+                    )
                   ])))
         ]));
   }
