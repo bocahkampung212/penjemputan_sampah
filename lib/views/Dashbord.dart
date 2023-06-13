@@ -1,34 +1,31 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
- class dashbord extends StatelessWidget {
-   const dashbord({super.key});
- 
-   @override
-   Widget build(BuildContext context) {
-     return Scaffold(
-       backgroundColor: Color.fromRGBO(42, 235, 109, 1),
-      body: Column(
-        children: [
-         Container(
-          width: 100,
-          height: 100,
-         margin: EdgeInsets.only(top: 50, left: 50, right: 50),
-         child: Column(
-          children: [
-            SizedBox(
-              height: 50,
-              width: 50,
-            ),
-            
-          ],
-         ) ,
-         ),
-         
-          Text('dasbord')
-          
-        ],
-      ),
-     );
-   }
- }
+class Dashbord extends StatelessWidget {
+  const Dashbord({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        backgroundColor: Color.fromRGBO(42, 190, 94, 1),
+        body: Stack(children: [
+          Container(
+              height: 250,
+              child: Card(
+                  margin: EdgeInsets.only(
+                    top: 100,
+                    left: 25,
+                    right: 25,
+                    bottom: 0,
+                  ),
+                  color: Color.fromARGB(255, 150, 235, 202),
+                  child: Column(children: [
+                    SizedBox(
+                      height: 100,
+                      width: 500,
+                    ),
+                    Image.asset('assets/')
+                  ])))
+        ]));
+  }
+}

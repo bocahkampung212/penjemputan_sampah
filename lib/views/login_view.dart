@@ -67,7 +67,7 @@ class LoginView extends StatelessWidget {
                             onPressed: () {
                               Navigator.pushReplacement(context,
                                   MaterialPageRoute(builder: (bc) {
-                                return dashbord();
+                                return Dashbord();
                               }));
                             },
                             child: Text('login')),
