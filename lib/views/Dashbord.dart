@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 class Dashbord extends StatelessWidget {
   const Dashbord({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +18,6 @@ class Dashbord extends StatelessWidget {
                     right: 50,
                     bottom: 0,
                   ),
-                  color: Color.fromARGB(255, 150, 235, 202),
                   child: Column(children: [
                     Image.asset(
                       'assets/background.jpg',
